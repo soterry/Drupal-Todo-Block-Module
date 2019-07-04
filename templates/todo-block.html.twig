@@ -1,0 +1,17 @@
+<div class="todo-block">
+    <ul class="todo-list">
+        <div class="template">
+            <li>
+                <label><input type="checkbox"><span></span></label><input type="button" value="Delete">
+            </li>
+        </div>
+        {% for task in tasks %}
+            <li data-id="{{ task.id }}">
+                <label><input type="checkbox"><span>{{ task.task }}</span></label><input type="button" value="×">
+            </li>
+        {% endfor %}
+    </ul>
+    <form>
+        <input type="text" name="task"><input type="submit" value="＋"><input type="button" value="× 完成済み">
+    </form>
+</div>

@@ -1,0 +1,32 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function todo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the todo.
+    case 'help.page.todo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Todo') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function todo_theme() {
+    return [
+        'todo-block' => [
+            'variables' => [
+                'tasks' => []
+            ]
+        ]
+    ];
+}

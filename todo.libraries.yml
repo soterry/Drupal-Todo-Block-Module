@@ -1,0 +1,23 @@
+todo:
+    version: 1.x
+    css:
+        theme:
+            css/todo-block.css: {}
+    js:
+        js/todo-block.js: {}
+    dependencies:
+        - core/jquery
+#        - todo/vue
+        - todo/oop
+vue:
+  version: 1.x
+  header: true
+  js:
+    https://cdn.jsdelivr.net/npm/vue: { external: true } 
+oop:
+  version: 1.x
+  header: true
+  js:
+      js/oop.min.js: {}
+  dependencies:
+      - core/jquery

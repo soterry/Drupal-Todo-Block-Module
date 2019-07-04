@@ -1,0 +1,23 @@
+#todo.insert:
+#  path: '/todo/insert'
+#  defaults:
+#    _controller: '\Drupal\todo\Controller\TodoController::insert'
+#    _title: 'Todo List Insert'
+#  requirements:
+#    _permission: 'access content'
+#    
+#todo.order:
+#  path: '/todo/order'
+#  defaults:
+#    _controller: '\Drupal\todo\Controller\TodoController::order'
+#    _title: 'Todo List Order'
+#  requirements:
+#    _permission: 'access content'
+#    
+#todo.delete:
+#  path: '/todo/{id}/delete'
+#  defaults:
+#    _controller: '\Drupal\todo\Controller\TodoController::delete'
+#    _title: 'Todo List Delete'
+#  requirements:
+#    _permission: 'access content'
