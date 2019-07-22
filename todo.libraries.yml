@@ -6,6 +6,7 @@ todo:
     js:
         js/todo-block.js: {}
     dependencies:
+        - core/drupalSettings
         - core/jquery
 #        - todo/vue
         - todo/oop
