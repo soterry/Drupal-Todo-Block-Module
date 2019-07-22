@@ -29,7 +29,7 @@ class TodoBlock extends BlockBase {
     }
 
     public function getCacheMaxAge() {
-//        \Drupal::service('page_cache_kill_switch')->trigger();
+        \Drupal::service('page_cache_kill_switch')->trigger();
         return 0;
     }
 
