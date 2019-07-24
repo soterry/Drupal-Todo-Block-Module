@@ -7,7 +7,7 @@
         </div>
         {% for task in tasks %}
             <li data-id="{{ task.id }}">
-                <label><input type="checkbox"><span>{{ task.task }}</span></label><input type="button" value="×">
+                <label><input type="checkbox"{% if task.is_finished %} checked="checked"{% endif %}><span>{{ task.task }}</span></label><input type="button" value="×">
             </li>
         {% endfor %}
     </ul>
